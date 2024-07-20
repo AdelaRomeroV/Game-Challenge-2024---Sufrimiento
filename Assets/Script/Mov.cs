@@ -7,8 +7,6 @@ public class Mov : MonoBehaviour
 
     [SerializeField] private Vector2 startPos;
     [SerializeField] private Vector2 direction;
-    public float longitud_minima = 20f;
-    private float longitud_en_x;
 
     [SerializeField] private int lane;
     [SerializeField] private Transform top;
@@ -20,11 +18,11 @@ public class Mov : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         lane = 0;
         transform.position = mid.position;
+        VerificarDireccion();
     }
 
     private void Update()
     {
-        //Movimiento();
         VerificarDireccion();
     }
 

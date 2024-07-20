@@ -492,7 +492,7 @@ MonoBehaviour:
   speed: 5
   startPos: {x: 0, y: 0}
   direction: {x: 0, y: 0}
-  longitud_minima: 20
+  chosee: 0
   lane: 0
   top: {fileID: 1005572277}
   mid: {fileID: 11227569}
