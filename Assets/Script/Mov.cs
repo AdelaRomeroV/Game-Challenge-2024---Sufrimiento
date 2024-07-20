@@ -14,6 +14,8 @@ public class Mov : MonoBehaviour
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
+        lane = 0;
+        transform.position = mid.position;
     }
 
     private void Update()
