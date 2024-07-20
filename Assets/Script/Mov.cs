@@ -1,12 +1,16 @@
 using UnityEngine;
-using UnityEngine.Android;
 
 public class Mov : MonoBehaviour
 {
     private Rigidbody2D rb;
     [SerializeField] private float speed;
 
-    private int lane;
+    [SerializeField] private Vector2 startPos;
+    [SerializeField] private Vector2 direction;
+    public float longitud_minima = 20f;
+    private float longitud_en_x;
+
+    [SerializeField] private int lane;
     [SerializeField] private Transform top;
     [SerializeField] private Transform mid;
     [SerializeField] private Transform bot;
@@ -21,18 +25,35 @@ public class Mov : MonoBehaviour
     private void Update()
     {
         //Movimiento();
-        CambioDeCarriles();
+        VerificarDireccion();
+    }
+
+    void VerificarDireccion()
+    {
+        if (Input.touchCount > 0)
+        {
+            Touch touch = Input.GetTouch(0);
+            switch (touch.phase)
+            {
+                case TouchPhase.Began:
+                    startPos = touch.position;
+                    break;
+                case TouchPhase.Ended:
+                    direction = touch.position;
+                    CambioDeCarriles(); 
+                    break;
+            }
+        }
     }
 
     void CambioDeCarriles()
     {
-        if (Input.GetKeyDown(KeyCode.LeftArrow))
+        if (startPos.x > direction.x)
         {
             switch (lane)
             {
                 case 0:
-                    lane = 0;
-                    transform.position = top.position;
+
                     break;
                 case 1:
                     lane = 0;
@@ -44,7 +65,7 @@ public class Mov : MonoBehaviour
                     break;
             }
         }
-        else if (Input.GetKeyDown(KeyCode.RightArrow))
+        else if (startPos.x < direction.x)
         {
             switch (lane)
             {
@@ -57,8 +78,7 @@ public class Mov : MonoBehaviour
                     transform.position = bot.position;
                     break;
                 case 2:
-                    lane = 2;
-                    transform.position = bot.position;
+                    
                     break;
             }
         }
