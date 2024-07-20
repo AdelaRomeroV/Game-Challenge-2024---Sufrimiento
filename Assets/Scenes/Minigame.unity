@@ -873,6 +873,12 @@ MonoBehaviour:
   - {fileID: 1394632057798478330, guid: b25e0b42ec6211c40a519ebac3f6142a, type: 3}
   - {fileID: 1394632057798478330, guid: 67f2046029e54bd4a9e9aa6c92c6f049, type: 3}
   - {fileID: 1394632057798478330, guid: 1c083b3ae1d11684c9c0a467e339fc64, type: 3}
+  objects8:
+  - {fileID: 1394632057798478330, guid: 1c083b3ae1d11684c9c0a467e339fc64, type: 3}
+  - {fileID: 1394632057798478330, guid: 41057ebf8f145f74d9adfd73f6bdff68, type: 3}
+  - {fileID: 1394632057798478330, guid: 41057ebf8f145f74d9adfd73f6bdff68, type: 3}
+  - {fileID: 1394632057798478330, guid: b25e0b42ec6211c40a519ebac3f6142a, type: 3}
+  - {fileID: 1394632057798478330, guid: 1c083b3ae1d11684c9c0a467e339fc64, type: 3}
   finish: 0
   capitanSparrow: {fileID: 233092486}
 --- !u!4 &1321707693
@@ -977,6 +983,12 @@ MonoBehaviour:
   - {fileID: 1394632057798478330, guid: 41057ebf8f145f74d9adfd73f6bdff68, type: 3}
   - {fileID: 1394632057798478330, guid: 67f2046029e54bd4a9e9aa6c92c6f049, type: 3}
   - {fileID: 1394632057798478330, guid: 67f2046029e54bd4a9e9aa6c92c6f049, type: 3}
+  objects8:
+  - {fileID: 1394632057798478330, guid: 1c083b3ae1d11684c9c0a467e339fc64, type: 3}
+  - {fileID: 1394632057798478330, guid: 1c083b3ae1d11684c9c0a467e339fc64, type: 3}
+  - {fileID: 1394632057798478330, guid: 67f2046029e54bd4a9e9aa6c92c6f049, type: 3}
+  - {fileID: 1394632057798478330, guid: 1c083b3ae1d11684c9c0a467e339fc64, type: 3}
+  - {fileID: 1394632057798478330, guid: 1c083b3ae1d11684c9c0a467e339fc64, type: 3}
   finish: 0
   capitanSparrow: {fileID: 233092486}
 --- !u!4 &1434693435
@@ -1124,6 +1136,12 @@ MonoBehaviour:
   - {fileID: 1394632057798478330, guid: 1c083b3ae1d11684c9c0a467e339fc64, type: 3}
   - {fileID: 1394632057798478330, guid: 1c083b3ae1d11684c9c0a467e339fc64, type: 3}
   - {fileID: 1394632057798478330, guid: 67f2046029e54bd4a9e9aa6c92c6f049, type: 3}
+  objects8:
+  - {fileID: 1394632057798478330, guid: 1c083b3ae1d11684c9c0a467e339fc64, type: 3}
+  - {fileID: 1394632057798478330, guid: 1c083b3ae1d11684c9c0a467e339fc64, type: 3}
+  - {fileID: 1394632057798478330, guid: 1c083b3ae1d11684c9c0a467e339fc64, type: 3}
+  - {fileID: 1394632057798478330, guid: 1c083b3ae1d11684c9c0a467e339fc64, type: 3}
+  - {fileID: 1394632057798478330, guid: 1c083b3ae1d11684c9c0a467e339fc64, type: 3}
   finish: 0
   capitanSparrow: {fileID: 233092486}
 --- !u!4 &1573959399
