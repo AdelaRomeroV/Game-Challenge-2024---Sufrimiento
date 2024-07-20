@@ -9,11 +9,16 @@ public class Mov : MonoBehaviour
     [SerializeField] private int lane = 1;
     [SerializeField] private Transform[] down;
     [SerializeField] private Transform[] mid;
+    [SerializeField] private Transform[] up;
+
+    private Animator animator;
 
     private bool stun = false;
+    private bool boost = false;
 
     private void Awake()
     {
+        animator = GetComponent<Animator>();
         lane = 1;
         transform.position = mid[lane].position;
         VerificarDireccion();
@@ -54,11 +59,13 @@ public class Mov : MonoBehaviour
                 case 1:
                     lane = 0;
                     if(stun) { transform.position = down[lane].position; }
+                    else if (boost) { transform.position = up[lane].position; }
                     else { transform.position = mid[lane].position; }
                     break;
                 case 2:
                     lane = 1;
                     if (stun) { transform.position = down[lane].position; }
+                    else if (boost) { transform.position = up[lane].position; }
                     else { transform.position = mid[lane].position; }
                     break;
             }
@@ -70,11 +77,13 @@ public class Mov : MonoBehaviour
                 case 0:
                     lane = 1;
                     if (stun) { transform.position = down[lane].position; }
+                    else if (boost) { transform.position = up[lane].position; }
                     else { transform.position = mid[lane].position; }
                     break;
                 case 1:
                     lane = 2;
                     if (stun) { transform.position = down[lane].position; }
+                    else if (boost) { transform.position = up[lane].position; }
                     else { transform.position = mid[lane].position; }
                     break;
                 case 2:
@@ -88,22 +97,37 @@ public class Mov : MonoBehaviour
     {
         if (collision.CompareTag("Hazards"))
         {
-            if (stun == false)
+            if (boost) 
+            {
+                boost = false;
+                transform.position = mid[lane].position;
+                Destroy(collision.gameObject);
+            }
+            else if (stun == false)
             {
                 stun = true;
+                animator.SetBool("Sparrow", true);
                 transform.position = down[lane].position;
                 Destroy(collision.gameObject);
-                Invoke("Adelantar", 5);
             }
             else if (stun == true)
             {
                 Destroy(gameObject);
             }
         }
-    }
-    void Adelantar()
-    {
-        stun = false;
-        transform.position = mid[lane].position;
+        if (collision.CompareTag("CoinsDoradas"))
+        {
+            if (stun == true)
+            {
+                stun = false;
+                animator.SetBool("Sparrow", false);
+                transform.position = mid[lane].position;
+            }
+            else 
+            {
+                boost = true;
+                transform.position = up[lane].position;
+            }
+        }
     }
 }

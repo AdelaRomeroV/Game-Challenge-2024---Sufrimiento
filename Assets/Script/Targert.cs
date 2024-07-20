@@ -17,6 +17,18 @@ public class Targert : MonoBehaviour
         {
             switch (puntaje.coins)
             {
+                case >= 3000:
+                    speed = 20;
+                    break;
+                case >= 2500:
+                    speed = 17;
+                    break;
+                case >= 2000:
+                    speed = 15;
+                    break;
+                case >= 1500:
+                    speed = 12;
+                    break;
                 case >= 1000:
                     speed = 10;
                     break;
