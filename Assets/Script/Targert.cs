@@ -41,4 +41,24 @@ public class Targert : MonoBehaviour
             Destroy(parent);
         }
     }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if(collision.CompareTag("Barco"))
+        {
+            Debug.Log("a");
+            Destroy(gameObject);
+        }
+    }
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Barco"))
+        {
+            Debug.Log("a");
+            Destroy(gameObject);
+        }
+    }
+    private void OnDestroy()
+    {
+        Destroy(parent);
+    }
 }
