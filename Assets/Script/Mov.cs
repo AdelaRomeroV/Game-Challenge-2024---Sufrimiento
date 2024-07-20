@@ -18,13 +18,13 @@ public class Mov : MonoBehaviour
 
     private void Update()
     {
-        Movimiento();
+        //Movimiento();
         CambioDeCarriles();
     }
 
     void CambioDeCarriles()
     {
-        if (Input.GetKeyDown(KeyCode.UpArrow))
+        if (Input.GetKeyDown(KeyCode.LeftArrow))
         {
             switch (lane)
             {
@@ -42,7 +42,7 @@ public class Mov : MonoBehaviour
                     break;
             }
         }
-        else if (Input.GetKeyDown(KeyCode.DownArrow))
+        else if (Input.GetKeyDown(KeyCode.RightArrow))
         {
             switch (lane)
             {

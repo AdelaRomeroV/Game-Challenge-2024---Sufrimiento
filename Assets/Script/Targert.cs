@@ -2,16 +2,11 @@ using UnityEngine;
 
 public class Targert : MonoBehaviour
 {
-    private Rigidbody2D rb;
     [SerializeField] private float speed;
-
-    private void Awake()
-    {
-        rb = GetComponent<Rigidbody2D>();
-    }
+    [SerializeField] private Transform PointA;
 
     void Update()
     {
-        rb.MovePosition(transform.position + Vector3.right * speed * Time.deltaTime);
+        transform.position = Vector3.MoveTowards(transform.position, PointA.position, speed * Time.deltaTime);
     }
 }
