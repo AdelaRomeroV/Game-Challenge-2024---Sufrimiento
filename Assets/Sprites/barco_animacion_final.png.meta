@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: b3ad28950ea66d64087ea86c3620e24b
+guid: 0857a2293edceb74295cc832b33a093c
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 15
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -71,7 +71,7 @@ TextureImporter:
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
-    textureFormat: -1
+    textureFormat: 4
     textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
@@ -84,12 +84,12 @@ TextureImporter:
     buildTarget: Standalone
     maxTextureSize: 2048
     resizeAlgorithm: 0
-    textureFormat: -1
+    textureFormat: 4
     textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
-    overridden: 0
+    overridden: 1
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
@@ -123,7 +123,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: barco_animacion (1)_0
+      name: barco_animacion_final_0
       rect:
         serializedVersion: 2
         x: 0
@@ -137,14 +137,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2ea1c336b7b56bd4a8527f028e1f2803
-      internalID: -669701581
+      spriteID: afa3e44ed0925314f92581844093c00a
+      internalID: 1975771576
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: barco_animacion (1)_1
+      name: barco_animacion_final_1
       rect:
         serializedVersion: 2
         x: 64
@@ -158,14 +158,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 82c4e6bee68bf9548aab70d9b6204f66
-      internalID: 2021510053
+      spriteID: 317d803d0c34c4c43a4e5bed0bd2aa38
+      internalID: -120751368
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: barco_animacion (1)_2
+      name: barco_animacion_final_2
       rect:
         serializedVersion: 2
         x: 128
@@ -179,14 +179,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dbec3fa2b23ed004daf749b0ca3c2b6f
-      internalID: 1196576215
+      spriteID: a363091208bea3d4fa2b25c96d4388ba
+      internalID: 94054007
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: barco_animacion (1)_3
+      name: barco_animacion_final_3
       rect:
         serializedVersion: 2
         x: 192
@@ -200,8 +200,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 05aea589c35a69744a1e649046f66a9e
-      internalID: -2138797348
+      spriteID: 9874a7bd0daee3743bcc19d6f628b387
+      internalID: -1549952699
       vertices: []
       indices: 
       edges: []
@@ -217,10 +217,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      barco_animacion (1)_0: -669701581
-      barco_animacion (1)_1: 2021510053
-      barco_animacion (1)_2: 1196576215
-      barco_animacion (1)_3: -2138797348
+      barco_animacion_final_0: 1975771576
+      barco_animacion_final_1: -120751368
+      barco_animacion_final_2: 94054007
+      barco_animacion_final_3: -1549952699
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

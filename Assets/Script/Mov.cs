@@ -95,7 +95,7 @@ public class Mov : MonoBehaviour
                 Destroy(collision.gameObject);
                 Invoke("Adelantar", 5);
             }
-            if (stun == true)
+            else if (stun == true)
             {
                 Destroy(gameObject);
             }
