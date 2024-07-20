@@ -8,6 +8,9 @@ public class Spawn : MonoBehaviour
     [SerializeField] private GameObject[] objects2;
     [SerializeField] private GameObject[] objects3;
     [SerializeField] private GameObject[] objects4;
+    [SerializeField] private GameObject[] objects5;
+    [SerializeField] private GameObject[] objects6;
+    [SerializeField] private GameObject[] objects7;
 
     [SerializeField] public bool finish = false;
 
@@ -69,6 +72,27 @@ public class Spawn : MonoBehaviour
                 for (int i = 0; i < objects4.Length; i++)
                 {
                     Instantiate(objects4[i], transform.position, Quaternion.identity);
+                    yield return new WaitForSeconds(0.75f);
+                }
+                break;
+            case 5:
+                for (int i = 0; i < objects5.Length; i++)
+                {
+                    Instantiate(objects5[i], transform.position, Quaternion.identity);
+                    yield return new WaitForSeconds(0.75f);
+                }
+                break;
+            case 6:
+                for (int i = 0; i < objects6.Length; i++)
+                {
+                    Instantiate(objects6[i], transform.position, Quaternion.identity);
+                    yield return new WaitForSeconds(0.75f);
+                }
+                break;
+            case 7:
+                for (int i = 0; i < objects7.Length; i++)
+                {
+                    Instantiate(objects7[i], transform.position, Quaternion.identity);
                     yield return new WaitForSeconds(0.75f);
                 }
                 break;

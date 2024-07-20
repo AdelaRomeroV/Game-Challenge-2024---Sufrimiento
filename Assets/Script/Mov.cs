@@ -2,21 +2,18 @@ using UnityEngine;
 
 public class Mov : MonoBehaviour
 {
-    private Rigidbody2D rb;
-    [SerializeField] private float speed;
 
-    [SerializeField] private Vector2 startPos;
-    [SerializeField] private Vector2 direction;
+    [SerializeField] private Vector2 startPos = Vector2.zero;
+    [SerializeField] private Vector2 direction = Vector2.zero;
 
-    [SerializeField] private int lane;
+    [SerializeField] private int lane = 1;
     [SerializeField] private Transform top;
     [SerializeField] private Transform mid;
     [SerializeField] private Transform bot;
 
     private void Awake()
     {
-        rb = GetComponent<Rigidbody2D>();
-        lane = 0;
+        lane = 1;
         transform.position = mid.position;
         VerificarDireccion();
     }
@@ -80,10 +77,5 @@ public class Mov : MonoBehaviour
                     break;
             }
         }
-    }
-
-    void Movimiento()
-    {
-        rb.MovePosition(transform.position + Vector3.right * speed * Time.deltaTime);
     }
 }

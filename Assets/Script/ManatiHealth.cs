@@ -21,7 +21,7 @@ public class ManatiHealth : MonoBehaviour
             isDeath = true;
             Destroy(circleCollider2D);
             Destroy(rb2D);
-            Destroy(gameObject, 5);
+            Destroy(gameObject);
         }
     }
     private void OnTriggerEnter2D(Collider2D collision)

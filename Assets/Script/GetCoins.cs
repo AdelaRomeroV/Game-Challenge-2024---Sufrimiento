@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class GetCoins : MonoBehaviour
 {
-    [SerializeField] private int coins;
+    [SerializeField] public int coins;
     [SerializeField] private TextMeshProUGUI textBox;
     private void OnTriggerEnter2D(Collider2D collision)
     {
