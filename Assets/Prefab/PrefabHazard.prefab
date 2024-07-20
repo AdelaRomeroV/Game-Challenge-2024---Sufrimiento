@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 7509772683408100415}
   - component: {fileID: 2483168623003553151}
   m_Layer: 0
-  m_Name: Lechuga
+  m_Name: Hazard
   m_TagString: Hazards
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

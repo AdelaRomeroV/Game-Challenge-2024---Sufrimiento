@@ -454,6 +454,7 @@ GameObject:
   - component: {fileID: 915325779}
   - component: {fileID: 915325780}
   - component: {fileID: 915325781}
+  - component: {fileID: 915325782}
   m_Layer: 0
   m_Name: Maniti
   m_TagString: Untagged
@@ -645,6 +646,23 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &915325782
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 915325770}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4718d2edcd2a00a4e954c2b58363ce17, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  circleCollider2D: {fileID: 0}
+  rb2D: {fileID: 0}
+  maxLife: 3
+  life: 3
+  isDeath: 0
 --- !u!1 &964861269
 GameObject:
   m_ObjectHideFlags: 3
