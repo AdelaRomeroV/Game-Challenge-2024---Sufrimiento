@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 7171654555490055337}
   m_Layer: 0
   m_Name: Lechuga
-  m_TagString: Coins
+  m_TagString: CoinsDoradas
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -150,7 +150,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 641083bee3adf024c9a1303132ebbc3a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  value: 10
+  value: 15
 --- !u!1 &1394632057798478330
 GameObject:
   m_ObjectHideFlags: 0
