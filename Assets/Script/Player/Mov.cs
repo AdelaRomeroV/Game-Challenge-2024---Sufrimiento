@@ -37,6 +37,7 @@ public class Mov : MonoBehaviour
     private bool timerActive;
     private float timer = 10;
     private float speed = 5f;
+    public bool pause;
 
     private void Awake()
     {
@@ -50,7 +51,7 @@ public class Mov : MonoBehaviour
     }
     private void Update()
     {
-        if(!muerto)
+        if(!muerto && !pause)
         {
             VerificarDireccion();
         }
