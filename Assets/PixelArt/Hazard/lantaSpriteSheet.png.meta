@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: beaee9b042a54d9418f63ab09b78bf18
+guid: ef0a73edd107ac341ac9676df0fae93e
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -94,19 +94,6 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
-    buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
     buildTarget: Server
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -123,12 +110,138 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Arbol4_0
+      name: lantaSpriteSheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 96
+        width: 64
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d5e7a4e74ee9c44e9e9ba6a5331376a
+      internalID: 1361741121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lantaSpriteSheet_1
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 96
+        width: 64
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64adcfd0d810588419c848e7184f0921
+      internalID: 1495983679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lantaSpriteSheet_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 64
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e785643ce578d014d8f7fa404b60959a
+      internalID: -799212955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lantaSpriteSheet_3
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 64
+        width: 64
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d84fd56eb9e9334428754cf28bf8fc62
+      internalID: -1236569648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lantaSpriteSheet_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 32
+        width: 64
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 774e924d36882d84eb1924a7bc16d101
+      internalID: -1345021643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lantaSpriteSheet_5
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 32
+        width: 64
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73f6fa08cbacd8b42a82649f1642563f
+      internalID: 1227528052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lantaSpriteSheet_6
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 32
+        width: 64
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -137,40 +250,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 57c9ffa381b553e47ae5cfa31d458be5
-      internalID: 1390437915
+      spriteID: c2107cf77118cae4ebe9e5a5084f7f93
+      internalID: 800162525
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Arbol4_1
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f731c04d9ace9d84f9cd9d8bc07bda7e
-      internalID: -1412988635
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Arbol4_2
+      name: lantaSpriteSheet_7
       rect:
         serializedVersion: 2
         x: 64
         y: 0
-        width: 32
+        width: 64
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -179,29 +271,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bada3e70e8601ef4882b6da173841968
-      internalID: 931574870
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Arbol4_3
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 38cf518f44182014183838ca3eeb6d17
-      internalID: 1066210221
+      spriteID: 896c49a4bf5f97a49b13e9f7ff5b2c20
+      internalID: 859549241
       vertices: []
       indices: 
       edges: []
@@ -217,10 +288,14 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Arbol4_0: 1390437915
-      Arbol4_1: -1412988635
-      Arbol4_2: 931574870
-      Arbol4_3: 1066210221
+      lantaSpriteSheet_0: 1361741121
+      lantaSpriteSheet_1: 1495983679
+      lantaSpriteSheet_2: -799212955
+      lantaSpriteSheet_3: -1236569648
+      lantaSpriteSheet_4: -1345021643
+      lantaSpriteSheet_5: 1227528052
+      lantaSpriteSheet_6: 800162525
+      lantaSpriteSheet_7: 859549241
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
