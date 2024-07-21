@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 
@@ -21,7 +19,7 @@ public class GetCoins : MonoBehaviour
     }
     private void OnDisable()
     {
-        panelTextVivo.SetActive(false);
+        if (panelTextVivo != null) panelTextVivo.SetActive(false);
         txtFinal.text = "Puntaje Final: " + coins;
     }
 }

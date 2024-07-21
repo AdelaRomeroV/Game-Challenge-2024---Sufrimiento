@@ -9,6 +9,7 @@ public class Timer : MonoBehaviour
     [SerializeField] GameObject panelText;
     [SerializeField] GameObject player;
     [SerializeField] GameObject panelRevive;
+    [SerializeField] GameObject nam;
     private void OnEnable()
     {
         txt = GetComponent<TextMeshProUGUI>();
@@ -26,11 +27,12 @@ public class Timer : MonoBehaviour
         }
         if (timer <= 0)
         {
-            panelRevive.SetActive(false);
             timer = 5;
             txt.text = timer.ToString();
             panelText.SetActive(false);
+            nam.SetActive(true);
             player.SetActive(true);
+            panelRevive.SetActive(false);
         }
 
     }

@@ -9,6 +9,8 @@ public class Mov : MonoBehaviour
     [SerializeField] private Vector2 startPos = Vector2.zero;
     [SerializeField] private Vector2 direction = Vector2.zero;
 
+    private CircleCollider2D circleCollider;
+
     [SerializeField] private int lane = 1;
     [SerializeField] private Transform[] down;
     [SerializeField] private Transform[] mid;
@@ -30,6 +32,7 @@ public class Mov : MonoBehaviour
     private void Awake()
     {
         animator = GetComponent<Animator>();
+        circleCollider = GetComponent<CircleCollider2D>();
         lane = 1;
         transform.position = mid[lane].position;
         textoPanel.SetActive(true);
@@ -132,6 +135,7 @@ public class Mov : MonoBehaviour
             {
                 boost = false;
                 transform.position = mid[lane].position;
+                StartCoroutine(DesactivarColision());
                 Destroy(collision.gameObject);
             }
             else if (stun == false)
@@ -162,6 +166,12 @@ public class Mov : MonoBehaviour
                 transform.position = up[lane].position;
             }
         }
+    }
+    IEnumerator DesactivarColision()
+    {
+        circleCollider.enabled = false;
+        yield return new WaitForSeconds(2f);
+        circleCollider.enabled = true;
     }
     private void OnEnable()
     {

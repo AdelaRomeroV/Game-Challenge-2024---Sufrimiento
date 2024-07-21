@@ -16,6 +16,7 @@ public class Spawn : MonoBehaviour
     [SerializeField] public bool finish = false;
 
     [SerializeField] public CapitanSparrow capitanSparrow;
+    [SerializeField] public float spawnear= 5f;
     private void Awake()
     {
         StartCoroutine(PirateSparrow());
@@ -32,7 +33,7 @@ public class Spawn : MonoBehaviour
         for (int i = 0; i < objects0.Length; i++)
         {
             Instantiate(objects0[i], transform.position, Quaternion.identity);
-            yield return new WaitForSeconds(0.75f);
+            yield return new WaitForSeconds(spawnear);
         }
         finish = true;
     }
@@ -45,63 +46,63 @@ public class Spawn : MonoBehaviour
                 for (int i = 0; i < objects0.Length; i++)
                 {
                     Instantiate(objects0[i], transform.position, Quaternion.identity);
-                    yield return new WaitForSeconds(0.75f);
+                    yield return new WaitForSeconds(spawnear);
                 }
                 break;
             case 1:
                 for (int i = 0; i < objects1.Length; i++)
                 {
                     Instantiate(objects1[i], transform.position, Quaternion.identity);
-                    yield return new WaitForSeconds(0.75f);
+                    yield return new WaitForSeconds(spawnear);
                 }
                 break;
             case 2:
                 for (int i = 0; i < objects2.Length; i++)
                 {
                     Instantiate(objects2[i], transform.position, Quaternion.identity);
-                    yield return new WaitForSeconds(0.75f);
+                    yield return new WaitForSeconds(spawnear);
                 }
                 break;
             case 3:
                 for (int i = 0; i < objects3.Length; i++)
                 {
                     Instantiate(objects3[i], transform.position, Quaternion.identity);
-                    yield return new WaitForSeconds(0.75f);
+                    yield return new WaitForSeconds(spawnear);
                 }
                 break;
             case 4:
                 for (int i = 0; i < objects4.Length; i++)
                 {
                     Instantiate(objects4[i], transform.position, Quaternion.identity);
-                    yield return new WaitForSeconds(0.75f);
+                    yield return new WaitForSeconds(spawnear);
                 }
                 break;
             case 5:
                 for (int i = 0; i < objects5.Length; i++)
                 {
                     Instantiate(objects5[i], transform.position, Quaternion.identity);
-                    yield return new WaitForSeconds(0.75f);
+                    yield return new WaitForSeconds(spawnear);
                 }
                 break;
             case 6:
                 for (int i = 0; i < objects6.Length; i++)
                 {
                     Instantiate(objects6[i], transform.position, Quaternion.identity);
-                    yield return new WaitForSeconds(0.75f);
+                    yield return new WaitForSeconds(spawnear);
                 }
                 break;
             case 7:
                 for (int i = 0; i < objects7.Length; i++)
                 {
                     Instantiate(objects7[i], transform.position, Quaternion.identity);
-                    yield return new WaitForSeconds(0.75f);
+                    yield return new WaitForSeconds(spawnear);
                 }
                 break;
             case 8:
                 for (int i = 0; i < objects8.Length; i++)
                 {
                     Instantiate(objects8[i], transform.position, Quaternion.identity);
-                    yield return new WaitForSeconds(0.75f);
+                    yield return new WaitForSeconds(spawnear);
                 }
                 break;
         }
