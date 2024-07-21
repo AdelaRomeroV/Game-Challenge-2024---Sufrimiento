@@ -10,7 +10,7 @@ public class CapitanSparrow : MonoBehaviour
 
     private void Update()
     {
-        if (left.finish == true && mid.finish == true && right.finish == true)
+        if (left.finish == true && mid.finish == true && right.finish== true)
         {
             RandomInstate();
             StartCorutineSpawns();
