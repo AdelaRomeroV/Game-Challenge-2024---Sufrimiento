@@ -12,6 +12,6 @@ public class textura : MonoBehaviour
 
     void FixedUpdate()
     {
-        material.mainTextureOffset += Vector2.right * Time.fixedDeltaTime;
+        material.mainTextureOffset += Vector2.right * 0.25f * Time.fixedDeltaTime;
     }
 }

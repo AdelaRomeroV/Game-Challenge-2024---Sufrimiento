@@ -1,3 +1,6 @@
+using System;
+using System.Collections;
+using TMPro;
 using UnityEngine;
 
 public class Mov : MonoBehaviour
@@ -11,6 +14,11 @@ public class Mov : MonoBehaviour
     [SerializeField] private Transform[] mid;
     [SerializeField] private Transform[] up;
 
+    [SerializeField] private GameObject textoPanel;
+    [SerializeField] private GameObject Spawn;
+    [SerializeField] private GameObject barco;
+    [SerializeField] private GameObject endPoint;
+
     private Animator animator;
 
     private bool stun = false;
@@ -21,12 +29,29 @@ public class Mov : MonoBehaviour
         animator = GetComponent<Animator>();
         lane = 1;
         transform.position = mid[lane].position;
-        VerificarDireccion();
+        textoPanel.SetActive(true);
+        Invoke("IniciarJuego", 5f);
     }
-
     private void Update()
     {
         VerificarDireccion();
+    }
+
+    private IEnumerator BarcoSeAcerca()
+    {
+        while (true) 
+        {
+            barco.transform.position = Vector2.MoveTowards(barco.transform.position, endPoint.transform.position, 5 * Time.deltaTime);
+            if(barco.transform.position.y < endPoint.transform.position.x) { break; }
+            yield return null;        
+        }
+    }
+
+    private void IniciarJuego()
+    {
+        textoPanel.SetActive(false);
+        Spawn.SetActive(true);
+        StartCoroutine(BarcoSeAcerca());
     }
 
     void VerificarDireccion()
@@ -59,13 +84,13 @@ public class Mov : MonoBehaviour
                 case 1:
                     lane = 0;
                     if(stun) { transform.position = down[lane].position; }
-                    else if (boost) { transform.position = Vector2.MoveTowards(transform.position, up[lane].position, 50 * Time.deltaTime); }
+                    else if (boost) { transform.position = up[lane].position; }
                     else { transform.position = mid[lane].position; }
                     break;
                 case 2:
                     lane = 1;
                     if (stun) { transform.position = down[lane].position; }
-                    else if (boost) { transform.position = Vector2.MoveTowards(transform.position, up[lane].position, 50 * Time.deltaTime); }
+                    else if (boost) { transform.position = up[lane].position; }
                     else { transform.position = mid[lane].position; }
                     break;
             }
@@ -77,13 +102,13 @@ public class Mov : MonoBehaviour
                 case 0:
                     lane = 1;
                     if (stun) { transform.position = down[lane].position; }
-                    else if (boost) { while (transform.position == up[lane].position ) transform.position = Vector2.MoveTowards(transform.position, up[lane].position, 50 * Time.deltaTime); }
+                    else if (boost) { transform.position = up[lane].position; }
                     else { transform.position = mid[lane].position; }
                     break;
                 case 1:
                     lane = 2;
                     if (stun) { transform.position = down[lane].position; }
-                    else if (boost) { transform.position = Vector2.MoveTowards(transform.position, up[lane].position, 50 * Time.deltaTime); }
+                    else if (boost) { transform.position = up[lane].position; }
                     else { transform.position = mid[lane].position; }
                     break;
                 case 2:
@@ -126,7 +151,7 @@ public class Mov : MonoBehaviour
             else 
             {
                 boost = true;
-                transform.position = Vector2.MoveTowards(transform.position, up[lane].position, 50 * Time.deltaTime);
+                transform.position = up[lane].position;
             }
         }
     }
