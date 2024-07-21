@@ -30338,8 +30338,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.0000023842, y: -8.01}
-  m_SizeDelta: {x: 102.39, y: 48.71}
+  m_AnchoredPosition: {x: 0.00000095367, y: -8.6}
+  m_SizeDelta: {x: 132.07, y: 48.71}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &756807499
 MonoBehaviour:
@@ -30652,18 +30652,10 @@ MonoBehaviour:
   startPos: {x: 0, y: 0}
   direction: {x: 0, y: 0}
   lane: 0
-  down:
-  - {fileID: 623200274}
-  - {fileID: 334989935}
-  - {fileID: 380686696}
   mid:
   - {fileID: 1005572277}
   - {fileID: 11227569}
   - {fileID: 854464618}
-  up:
-  - {fileID: 113493971}
-  - {fileID: 1453623583}
-  - {fileID: 106367061}
   textoPanel: {fileID: 283091166}
   Spawn: {fileID: 1057908327}
   barco: {fileID: 2140324749}
@@ -37085,7 +37077,7 @@ Animator:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2140324749}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: b0b80fe6ecd2fc1488454a7d0cf8fa07, type: 2}
   m_CullingMode: 0
@@ -37139,7 +37131,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 7
-  m_Sprite: {fileID: 1975771576, guid: 0857a2293edceb74295cc832b33a093c, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 5cfe0700040ed274a99d05ad403d3e90, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -37174,11 +37166,11 @@ SceneRoots:
   - {fileID: 1672339647}
   - {fileID: 1636056157}
   - {fileID: 1614352273}
-  - {fileID: 915325775}
   - {fileID: 511527869}
   - {fileID: 1449567849}
   - {fileID: 1057908328}
   - {fileID: 233092487}
   - {fileID: 197598117}
   - {fileID: 971295421}
+  - {fileID: 915325775}
   - {fileID: 1506720037}

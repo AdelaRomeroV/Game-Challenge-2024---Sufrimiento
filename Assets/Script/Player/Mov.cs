@@ -12,9 +12,7 @@ public class Mov : MonoBehaviour
     private CircleCollider2D circleCollider;
 
     [SerializeField] private int lane = 1;
-    [SerializeField] private Transform[] down;
     [SerializeField] private Transform[] mid;
-    [SerializeField] private Transform[] up;
 
     [SerializeField] private GameObject textoPanel;
     [SerializeField] private GameObject Spawn;
@@ -92,15 +90,11 @@ public class Mov : MonoBehaviour
                     break;
                 case 1:
                     lane = 0;
-                    if(stun) { transform.position = down[lane].position; }
-                    else if (boost) { transform.position = up[lane].position; }
-                    else { transform.position = mid[lane].position; }
+                    transform.position = mid[lane].position; 
                     break;
                 case 2:
                     lane = 1;
-                    if (stun) { transform.position = down[lane].position; }
-                    else if (boost) { transform.position = up[lane].position; }
-                    else { transform.position = mid[lane].position; }
+                    transform.position = mid[lane].position;
                     break;
             }
         }
@@ -110,15 +104,11 @@ public class Mov : MonoBehaviour
             {
                 case 0:
                     lane = 1;
-                    if (stun) { transform.position = down[lane].position; }
-                    else if (boost) { transform.position = up[lane].position; }
-                    else { transform.position = mid[lane].position; }
+                    transform.position = mid[lane].position;
                     break;
                 case 1:
                     lane = 2;
-                    if (stun) { transform.position = down[lane].position; }
-                    else if (boost) { transform.position = up[lane].position; }
-                    else { transform.position = mid[lane].position; }
+                    transform.position = mid[lane].position;
                     break;
                 case 2:
                     
@@ -142,7 +132,6 @@ public class Mov : MonoBehaviour
             {
                 stun = true;
                 animator.SetBool("Sparrow", true);
-                transform.position = down[lane].position;
                 StartCoroutine(DesactivarColision());
                 Destroy(collision.gameObject);
             }
@@ -164,7 +153,6 @@ public class Mov : MonoBehaviour
             else 
             {
                 boost = true;
-                transform.position = up[lane].position;
             }
         }
     }
