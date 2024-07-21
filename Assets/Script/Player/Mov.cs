@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using TMPro;
+using UnityEditor.Rendering;
 using UnityEngine;
 
 public class Mov : MonoBehaviour
@@ -13,19 +14,24 @@ public class Mov : MonoBehaviour
 
     [SerializeField] private int lane = 1;
     [SerializeField] private Transform[] mid;
+    [SerializeField] private Transform[] barcoPos;
 
     [SerializeField] private GameObject textoPanel;
     [SerializeField] private GameObject Spawn;
     [SerializeField] private GameObject barco;
-    [SerializeField] private GameObject endPoint;
 
     [SerializeField] private GameObject panelMenu;
 
     private Animator animator;
 
     private bool stun = false;
-    private bool boost = false;
+    private bool boost = true;
     public bool muerto = false;
+    private int num = 0;
+
+    private bool timerActive;
+    private float timer = 10;
+    private float speed = 5f;
 
     private void Awake()
     {
@@ -48,8 +54,8 @@ public class Mov : MonoBehaviour
     {
         while (true) 
         {
-            barco.transform.position = Vector2.MoveTowards(barco.transform.position, endPoint.transform.position, 5 * Time.deltaTime);
-            if(barco.transform.position.y < endPoint.transform.position.x) { break; }
+            barco.transform.position = Vector2.MoveTowards(barco.transform.position, barcoPos[num].transform.position, speed * Time.deltaTime);
+            if(barco.transform.position.y < barcoPos[num].transform.position.x) { break; }
             yield return null;        
         }
     }
@@ -121,41 +127,56 @@ public class Mov : MonoBehaviour
     {
         if (collision.CompareTag("Hazards"))
         {
+            if (!timerActive) StartCoroutine(IniciarCronometroDeRegreso());
+            else { timer += 5; }
             if (boost) 
             {
                 boost = false;
                 transform.position = mid[lane].position;
+                num = 1;
+                StartCoroutine(BarcoSeAcerca());
                 StartCoroutine(DesactivarColision());
                 Destroy(collision.gameObject);
             }
             else if (stun == false)
             {
                 stun = true;
+                num = 2;
+                StartCoroutine(BarcoSeAcerca());
                 animator.SetBool("Sparrow", true);
                 StartCoroutine(DesactivarColision());
                 Destroy(collision.gameObject);
             }
             else if (stun == true)
             {
+                StartCoroutine(BarcoSeAcerca());
                 Destroy(collision.gameObject);
                 muerto = true;
                 animator.SetTrigger("Muerto");
             }
         }
-        if (collision.CompareTag("CoinsDoradas"))
-        {
-            if (stun == true)
-            {
-                stun = false;
-                animator.SetBool("Sparrow", false);
-                transform.position = mid[lane].position;
-            }
-            else 
-            {
-                boost = true;
-            }
-        }
     }
+
+    IEnumerator IniciarCronometroDeRegreso()
+    {
+        timerActive = true;
+        while (timer >= 0)
+        {          
+            yield return new WaitForSeconds(1f);
+            timer--;
+        }
+        timerActive = false;
+        animator.SetBool("Sparrow", false);
+        speed = 1.5f;
+        num = 1;
+        StartCoroutine(BarcoSeAcerca());
+        yield return new WaitForSeconds(1f);
+        num = 0;
+        StartCoroutine(BarcoSeAcerca());
+        yield return new WaitForSeconds(1f);
+        speed = 5f;
+    }
+
     IEnumerator DesactivarColision()
     {
         circleCollider.enabled = false;
