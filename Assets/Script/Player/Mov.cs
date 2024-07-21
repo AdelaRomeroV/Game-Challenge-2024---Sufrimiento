@@ -20,6 +20,7 @@ public class Mov : MonoBehaviour
     [SerializeField] private Transform[] barcoPos;
 
     [SerializeField] private GameObject textoPanel;
+    [SerializeField] private GameObject mano;
     [SerializeField] private GameObject Spawn;
     [SerializeField] private GameObject barco;
 
@@ -69,6 +70,7 @@ public class Mov : MonoBehaviour
 
     private void IniciarJuego()
     {
+        mano.SetActive(false);
         textoPanel.SetActive(false);
         Spawn.SetActive(true);
         StartCoroutine(BarcoSeAcerca());
