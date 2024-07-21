@@ -26,8 +26,6 @@ public class Mov : MonoBehaviour
 
     [SerializeField] private GameObject panelMenu;
 
-    private SpriteRenderer sprite;
-
     private Animator animator;
 
     private bool stun = false;
@@ -44,7 +42,6 @@ public class Mov : MonoBehaviour
     {
         animator = GetComponent<Animator>();
         circleCollider = GetComponent<CircleCollider2D>();
-        sprite = GetComponent<SpriteRenderer>();
         lane = 1;
         transform.position = mid[lane].position;
         textoPanel.SetActive(true);
@@ -192,10 +189,8 @@ public class Mov : MonoBehaviour
     IEnumerator DesactivarColision()
     {
         circleCollider.excludeLayers = list;
-        sprite.color = Color.red;
         yield return new WaitForSeconds(1f);
         circleCollider.excludeLayers = voidlist;
-        sprite.color = Color.white;
         circleCollider.enabled = true;
     }
     private void OnEnable()

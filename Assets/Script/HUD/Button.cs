@@ -8,6 +8,7 @@ public class Button : MonoBehaviour
     [SerializeField] private GameObject video;
     [SerializeField] private GameObject panelPausa;
     [SerializeField] private Mov player;
+    [SerializeField] private AudioSource music;
 
     private void Awake()
     {
@@ -38,5 +39,10 @@ public class Button : MonoBehaviour
     public void Exit()
     {
         Application.Quit();
+    }
+    public void AlternarMute()
+    {
+        if (music.mute == true) music.mute = false;
+        else music.mute = true;
     }
 }
