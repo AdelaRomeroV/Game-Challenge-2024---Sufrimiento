@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 758653518574544041}
   - component: {fileID: 7509772683408100415}
   - component: {fileID: 2483168623003553151}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Hazard
   m_TagString: Hazards
   m_Icon: {fileID: 0}
@@ -102,6 +102,7 @@ MonoBehaviour:
   pointA: {fileID: 765775507842549637}
   parent: {fileID: 1394632057798478330}
   puntaje: {fileID: 0}
+  spawn: {fileID: 0}
 --- !u!58 &2483168623003553151
 CircleCollider2D:
   m_ObjectHideFlags: 0

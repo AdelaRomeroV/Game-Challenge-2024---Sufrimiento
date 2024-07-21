@@ -1,11 +1,14 @@
 using System;
 using System.Collections;
 using TMPro;
+using Unity.VisualScripting;
 using UnityEditor.Rendering;
 using UnityEngine;
 
 public class Mov : MonoBehaviour
 {
+    [SerializeField] private LayerMask list;
+    [SerializeField] private LayerMask voidlist;
 
     [SerializeField] private Vector2 startPos = Vector2.zero;
     [SerializeField] private Vector2 direction = Vector2.zero;
@@ -22,6 +25,8 @@ public class Mov : MonoBehaviour
 
     [SerializeField] private GameObject panelMenu;
 
+    private SpriteRenderer sprite;
+
     private Animator animator;
 
     private bool stun = false;
@@ -37,6 +42,7 @@ public class Mov : MonoBehaviour
     {
         animator = GetComponent<Animator>();
         circleCollider = GetComponent<CircleCollider2D>();
+        sprite = GetComponent<SpriteRenderer>();
         lane = 1;
         transform.position = mid[lane].position;
         textoPanel.SetActive(true);
@@ -165,7 +171,10 @@ public class Mov : MonoBehaviour
             yield return new WaitForSeconds(1f);
             timer--;
         }
+        boost = true;
+        stun = false;
         timerActive = false;
+        timer = 10f;
         animator.SetBool("Sparrow", false);
         speed = 1.5f;
         num = 1;
@@ -179,13 +188,19 @@ public class Mov : MonoBehaviour
 
     IEnumerator DesactivarColision()
     {
-        circleCollider.enabled = false;
-        yield return new WaitForSeconds(2f);
+        circleCollider.excludeLayers = list;
+        sprite.color = Color.red;
+        yield return new WaitForSeconds(1f);
+        circleCollider.excludeLayers = voidlist;
+        sprite.color = Color.white;
         circleCollider.enabled = true;
     }
     private void OnEnable()
     {
         muerto = false;
+        boost = true;
+        barco.transform.position = barcoPos[0].position;
+        stun = false;
         lane = 1;
         transform.position = mid[lane].position;
     }

@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class Button : MonoBehaviour
 {
     [SerializeField] private GameObject video;
+    [SerializeField] private GameObject panelPausa;
 
     public void Reiniciar()
     {
@@ -15,5 +16,19 @@ public class Button : MonoBehaviour
     public void VerPublicidad()
     {
         video.SetActive(true);
+    }
+    public void Menu()
+    {
+        Time.timeScale = 0f;
+        panelPausa.SetActive(true);
+    }
+    public void Continuar()
+    {
+        Time.timeScale = 1f;
+        panelPausa.SetActive(false);
+    }
+    public void Exit()
+    {
+        Application.Quit();
     }
 }
