@@ -8,6 +8,7 @@ TagManager:
   - Hazards
   - Barco
   - CoinsDoradas
+  - Dialogo
   layers:
   - Default
   - TransparentFX
@@ -45,6 +46,27 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: New Layer 1
+  - name: fondo
+    uniqueID: 451582433
+    locked: 0
+  - name: water
+    uniqueID: 4038642769
+    locked: 0
+  - name: pasto
+    uniqueID: 4259151397
+    locked: 0
+  - name: Decoracion
+    uniqueID: 2032055493
+    locked: 0
+  - name: items
+    uniqueID: 874239787
+    locked: 0
+  - name: barco
+    uniqueID: 2770500053
+    locked: 0
+  - name: manatie
+    uniqueID: 3634599365
+    locked: 0
+  - name: canvas
     uniqueID: 149892937
     locked: 0

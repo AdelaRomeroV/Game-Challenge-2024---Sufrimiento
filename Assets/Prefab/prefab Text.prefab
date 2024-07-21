@@ -14,8 +14,8 @@ GameObject:
   - component: {fileID: 2483168623003553151}
   - component: {fileID: 7171654555490055337}
   m_Layer: 0
-  m_Name: Lechuga
-  m_TagString: Coins
+  m_Name: datos
+  m_TagString: Dialogo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -76,7 +76,7 @@ SpriteRenderer:
   m_SortingLayerID: 874239787
   m_SortingLayer: 5
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 48a6964cb20a3694caf4209948548207, type: 3}
+  m_Sprite: {fileID: 122455635, guid: 8b4fb7aecd3006a45acb64fe63c4541e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -151,7 +151,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 641083bee3adf024c9a1303132ebbc3a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  value: 5
+  value: 15
 --- !u!1 &1394632057798478330
 GameObject:
   m_ObjectHideFlags: 0
@@ -162,8 +162,8 @@ GameObject:
   m_Component:
   - component: {fileID: 8925905959590717300}
   m_Layer: 0
-  m_Name: PrefabLechuga
-  m_TagString: Untagged
+  m_Name: prefab Text
+  m_TagString: Dialogo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
