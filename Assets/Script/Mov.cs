@@ -19,6 +19,8 @@ public class Mov : MonoBehaviour
     [SerializeField] private GameObject barco;
     [SerializeField] private GameObject endPoint;
 
+    [SerializeField] private GameObject panelMenu;
+
     private Animator animator;
 
     private bool stun = false;
@@ -137,7 +139,9 @@ public class Mov : MonoBehaviour
             }
             else if (stun == true)
             {
-                Destroy(gameObject);
+                gameObject.SetActive(false);
+                panelMenu.SetActive(true);            
+                Time.timeScale = 0;
             }
         }
         if (collision.CompareTag("CoinsDoradas"))

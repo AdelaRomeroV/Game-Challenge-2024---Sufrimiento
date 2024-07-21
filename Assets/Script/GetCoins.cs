@@ -7,6 +7,8 @@ public class GetCoins : MonoBehaviour
 {
     [SerializeField] public int coins;
     [SerializeField] private TextMeshProUGUI textBox;
+    [SerializeField] private GameObject panelTextVivo;
+    [SerializeField] private TextMeshProUGUI txtFinal;
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Coins") || collision.CompareTag("CoinsDoradas"))
@@ -16,5 +18,10 @@ public class GetCoins : MonoBehaviour
             textBox.text = "Puntaje: " + coins;
             Destroy(collision.gameObject);
         }
+    }
+    private void OnDisable()
+    {
+        panelTextVivo.SetActive(false);
+        txtFinal.text = "Puntaje Final: " + coins;
     }
 }
