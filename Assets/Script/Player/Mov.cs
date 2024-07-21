@@ -143,6 +143,7 @@ public class Mov : MonoBehaviour
                 stun = true;
                 animator.SetBool("Sparrow", true);
                 transform.position = down[lane].position;
+                StartCoroutine(DesactivarColision());
                 Destroy(collision.gameObject);
             }
             else if (stun == true)
