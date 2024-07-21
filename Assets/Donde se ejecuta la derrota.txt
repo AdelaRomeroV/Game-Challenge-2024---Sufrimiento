@@ -1,0 +1,1 @@
+En el script de "mov" del manatí, en la ultima parte donde se revisa la colisión contra los Hazard. Y cuando este esta con un stun y recibe otro golpe

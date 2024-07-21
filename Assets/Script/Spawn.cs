@@ -16,7 +16,7 @@ public class Spawn : MonoBehaviour
     [SerializeField] public bool finish = false;
 
     [SerializeField] public CapitanSparrow capitanSparrow;
-    [SerializeField] public float spawnear= 5f;
+    [SerializeField] public float spawnear;
     private void Awake()
     {
         StartCoroutine(PirateSparrow());
@@ -33,7 +33,7 @@ public class Spawn : MonoBehaviour
         for (int i = 0; i < objects0.Length; i++)
         {
             Instantiate(objects0[i], transform.position, Quaternion.identity);
-            yield return new WaitForSeconds(spawnear);
+            yield return new WaitForSeconds(3f);
         }
         finish = true;
     }
