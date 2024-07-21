@@ -25,6 +25,7 @@ public class Mov : MonoBehaviour
 
     private bool stun = false;
     private bool boost = false;
+    public bool muerto = false;
 
     private void Awake()
     {
@@ -36,7 +37,10 @@ public class Mov : MonoBehaviour
     }
     private void Update()
     {
-        VerificarDireccion();
+        if(!muerto)
+        {
+            VerificarDireccion();
+        }
     }
 
     private IEnumerator BarcoSeAcerca()
@@ -139,9 +143,9 @@ public class Mov : MonoBehaviour
             }
             else if (stun == true)
             {
-                gameObject.SetActive(false);
-                panelMenu.SetActive(true);            
-                Time.timeScale = 0;
+                Destroy(collision.gameObject);
+                muerto = true;
+                animator.SetTrigger("Muerto");
             }
         }
         if (collision.CompareTag("CoinsDoradas"))
@@ -158,5 +162,17 @@ public class Mov : MonoBehaviour
                 transform.position = up[lane].position;
             }
         }
+    }
+    private void OnEnable()
+    {
+        muerto = false;
+        lane = 1;
+        transform.position = mid[lane].position;
+    }
+    public void Muerte()
+    {
+        gameObject.SetActive(false);
+        panelMenu.SetActive(true);
+        Time.timeScale = 0;
     }
 }

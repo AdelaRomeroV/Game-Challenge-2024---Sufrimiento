@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 703e88badd27f964ab29a6cd6ca186ea
+guid: 158cb54fb7e61f3469f55a988b6b62e8
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -37,9 +37,9 @@ TextureImporter:
     filterMode: 0
     aniso: 1
     mipBias: 0
-    wrapU: 0
-    wrapV: 0
-    wrapW: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -123,85 +123,85 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: agua_final_0
+      name: Boton_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 593
-        height: 593
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 7, y: 8, z: 6, w: 7}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ba3372d91ba8c3d47b1cee74eb2d22ab
-      internalID: 1644012227
+      spriteID: 12c6c3c5b27814b41a24d1a309a73a3d
+      internalID: -2060430541
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: agua_final_1
+      name: Boton_1
       rect:
         serializedVersion: 2
-        x: 593
+        x: 32
         y: 0
-        width: 593
-        height: 593
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 7, y: 7, z: 6, w: 7}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 956c198947c3e6a438d23742c32727ff
-      internalID: 756289178
+      spriteID: 3d1c4e6343cc31843a85f7a36dfbcd38
+      internalID: 1496016354
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: agua_final_2
+      name: Boton_2
       rect:
         serializedVersion: 2
-        x: 1186
+        x: 64
         y: 0
-        width: 593
-        height: 593
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 7, y: 7, z: 6, w: 7}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2158fb2fecbcbdd448c34f19b22243ce
-      internalID: -1915854789
+      spriteID: fed291ec3c1d0bc43a9eaa157cd23411
+      internalID: 1886181152
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: agua_final_3
+      name: Boton_3
       rect:
         serializedVersion: 2
-        x: 1779
+        x: 96
         y: 0
-        width: 593
-        height: 593
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 6, y: 6, z: 6, w: 10}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b5c57850d9c124e419306974a4305e75
-      internalID: 1516676421
+      spriteID: 9b7212bba5cfb694faca29ceb124884c
+      internalID: 578670839
       vertices: []
       indices: 
       edges: []
@@ -217,10 +217,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      agua_final_0: 1644012227
-      agua_final_1: 756289178
-      agua_final_2: -1915854789
-      agua_final_3: 1516676421
+      Boton_0: -2060430541
+      Boton_1: 1496016354
+      Boton_2: 1886181152
+      Boton_3: 578670839
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

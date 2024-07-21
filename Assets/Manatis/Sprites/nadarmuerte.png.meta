@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 703e88badd27f964ab29a6cd6ca186ea
+guid: 12380c0c555b6ae4b9e26c9ae5a123e5
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -37,9 +37,9 @@ TextureImporter:
     filterMode: 0
     aniso: 1
     mipBias: 0
-    wrapU: 0
-    wrapV: 0
-    wrapW: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -123,13 +123,139 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: agua_final_0
+      name: nadarmuerte_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 82
+        width: 48
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbec00f47d4b66d44945db7a2a73954b
+      internalID: 228617176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nadarmuerte_1
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 82
+        width: 48
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77a813b6cef1f5c468ab2ea676369a0c
+      internalID: 233387006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nadarmuerte_2
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 82
+        width: 48
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49445c3421db68d48a23a0153204c4ba
+      internalID: 329910685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nadarmuerte_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 41
+        width: 48
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6969a0062fd80d148aefa19e69e568a2
+      internalID: 661958226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nadarmuerte_4
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 41
+        width: 48
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a09aa549a5c0dd45a3cc51abb06013f
+      internalID: -1440519853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nadarmuerte_5
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 41
+        width: 48
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2d3580e4f7034a4d80681b40b2f6f98
+      internalID: -1839163942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nadarmuerte_6
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 593
-        height: 593
+        width: 48
+        height: 41
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -137,20 +263,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ba3372d91ba8c3d47b1cee74eb2d22ab
-      internalID: 1644012227
+      spriteID: ba77467ba3d88224fa377c565b4d4e4f
+      internalID: 93072019
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: agua_final_1
+      name: nadarmuerte_7
       rect:
         serializedVersion: 2
-        x: 593
+        x: 48
         y: 0
-        width: 593
-        height: 593
+        width: 48
+        height: 41
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -158,50 +284,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 956c198947c3e6a438d23742c32727ff
-      internalID: 756289178
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: agua_final_2
-      rect:
-        serializedVersion: 2
-        x: 1186
-        y: 0
-        width: 593
-        height: 593
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2158fb2fecbcbdd448c34f19b22243ce
-      internalID: -1915854789
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: agua_final_3
-      rect:
-        serializedVersion: 2
-        x: 1779
-        y: 0
-        width: 593
-        height: 593
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b5c57850d9c124e419306974a4305e75
-      internalID: 1516676421
+      spriteID: a91c7eec34bcb1b40a612ba9e14512cb
+      internalID: -1891607609
       vertices: []
       indices: 
       edges: []
@@ -217,10 +301,14 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      agua_final_0: 1644012227
-      agua_final_1: 756289178
-      agua_final_2: -1915854789
-      agua_final_3: 1516676421
+      nadarmuerte_0: 228617176
+      nadarmuerte_1: 233387006
+      nadarmuerte_2: 329910685
+      nadarmuerte_3: 661958226
+      nadarmuerte_4: -1440519853
+      nadarmuerte_5: -1839163942
+      nadarmuerte_6: 93072019
+      nadarmuerte_7: -1891607609
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
